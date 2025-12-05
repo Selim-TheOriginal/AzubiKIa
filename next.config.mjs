@@ -1,11 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export', 
+  basePath: '/AzubiKIa', // Wichtig: Muss Ihr Repository-Name sein
+  trailingSlash: true, 
+  experimental: {},
   typescript: {
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: true, 
   },
-  images: {
-    unoptimized: true,
-  },
-}
+};
 
-export default nextConfig
+export default nextConfig;
